@@ -1,7 +1,7 @@
-const month = process.argv[2];
+const month = Number(process.argv[2]);
 
  
-if(month == 1){
+if(month === 1){
     console.log("冬");
 }else if( month <= 4 ){
     console.log("春");
