@@ -10,7 +10,7 @@ for ( let i = 1; i <= arg1; i++){
     if ( i%2 === 0 ){
         
         // "-"から始まる 
-        for ( j = 1; j <= arg2; j++ ){
+        for ( let j = 1; j <= arg2; j++ ){
             if ( j%2 === 0 ){
                 array.push('*');
             } else {
