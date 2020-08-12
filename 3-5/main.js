@@ -26,12 +26,7 @@ for ( let i = 0; i < students.length; i++ ){
 
     const number = Math.floor(students[i]/10);
 
-    //count[number]が未定義の時
-    if (count[number] === undefined){
-        count[number] = 0;
-    }
-
-    count[number]++
+    count[number]++ ;
 }
 
 //countの最大値を算出する
