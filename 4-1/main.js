@@ -4,7 +4,7 @@ const arg = process.argv
 const array = [];
 
 for ( let i = 2; i < arg.length; i++ ){
-    array.push(arg[i])
+    array.push(Number(arg[i]))
 }
 
 
@@ -12,7 +12,6 @@ for ( let i = 2; i < arg.length; i++ ){
 array.sort(function(a,b){
     return a - b;
 });
-console.log(array);
 
 //３番目の値を取得
 console.log(array[2]);
