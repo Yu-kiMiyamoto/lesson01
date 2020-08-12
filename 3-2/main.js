@@ -1,5 +1,5 @@
-const arg1 = process.argv[2];
-const arg2 = process.argv[3];
+const arg1 = Number(process.argv[2]);
+const arg2 = Number(process.argv[3]);
 
 // "arg1"行の配列を作る
 for ( let i = 1; i <= arg1; i++){
