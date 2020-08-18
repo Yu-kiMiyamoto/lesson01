@@ -12,7 +12,7 @@ for ( let i = 0; i < errorLogs.length; i++){
   //"."の次の文字までの文字数を数える
   const startPoint = errorLogs[i].indexOf(start) + 1;
   //"." と "-" の間の文字数を数える
-    const endPoint = errorLogs[i].indexOf(end) - startPoint;
+    const endPoint = errorLogs[i].indexOf(end) - startPoint-1;
   //"." と "-" の間の文字を表示
   console.log(errorLogs[i].substr(startPoint,endPoint));
 }
