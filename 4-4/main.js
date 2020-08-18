@@ -1,10 +1,13 @@
   
 const array = [];
 
-for ( let i = 0; i < 10; i++ ){
+while ( array.length < 10 ){
 
     const num = Math.floor( Math.random()*10 ); 
-    array.push(num);
+
+    if(!array.includes(num)){
+        array.push(num);
+    }
 }
 
 console.log(array.join(" "));
