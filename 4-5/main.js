@@ -1,4 +1,4 @@
-const arg = process.argv.slice(2);
+const arg = process.argv;
 
 const array = [];
 
@@ -6,11 +6,11 @@ const array = [];
 for ( let i = 0; i<=9999; i++){
 
     //コマンドライン引数の個数分だけ空配列に入れる
-    for ( let j = 0; j < arg.length; j++ ){
+    for ( let j = 2; j < arg.length; j++ ){
         //もし、数字がコマンドライン引数にあれば
-        if ( String(i) === arg[j] ){
+        if ( i === Number(arg[j]) ){
             //空配列に入れる
-            array.push(arg[j]);
+            array.push(Number(arg[j]));
         }
     }
 }
