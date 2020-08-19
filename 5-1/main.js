@@ -20,8 +20,12 @@ const profiles = {
 }
 
 
-for ( let i = 0; i < profiles['profiles'].length; i++  ){
+/*for ( let i = 0; i < profiles['profiles'].length; i++  ){
  const name = profiles.profiles[i].name;
  const age  = profiles.profiles[i].age;
  console.log(`${name}:${age}`);
+}*/
+
+for (const element of profiles.profiles){
+  console.log(`${element.name}:${element.age}`);
 }
